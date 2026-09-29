@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Liam 林联敏 · Golang 资深后端工程师</title>
+<meta name="description" content="林联敏（Liam），Golang 资深后端工程师，9 年高并发分布式系统经验，曾就职于泛微、哔哩哔哩、心动网络（TapTap）、欢乐互娱，正在用 Go 构建 AI 基础设施。" />
+<meta name="author" content="林联敏 Liam" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Liam 林联敏 · Golang 资深后端工程师" />
+<meta property="og:description" content="Gopher × 分布式系统 × AI Infra。高并发、高可用、可演进的后端系统。" />
+<meta name="theme-color" content="#F2EDE3" />
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ============ MOBILE TOP BAR ============ -->
+<header class="topbar">
+  <a class="brand" href="#home">Liam<i></i></a>
+  <div class="topbar-r">
+    <div class="lang" role="group" aria-label="Language / 语言"><button type="button" data-lang="zh" aria-pressed="true">中</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
+    <button class="burger" id="burger" aria-controls="side" aria-expanded="false">MENU</button>
+  </div>
+</header>
+<div class="scrim" id="scrim"></div>
+
+<!-- ============ SIDEBAR NAV ============ -->
+<aside class="side" id="side">
+  <div>
+    <div class="side-brand">
+      <a class="brand" href="#home">Liam<i></i></a>
+      <div class="lang" role="group" aria-label="Language / 语言"><button type="button" data-lang="zh" aria-pressed="true">中</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
+    </div>
+    <div class="brand-sub mono" data-i18n="brand.sub">林联敏 / Portfolio 2026</div>
+  </div>
+
+  <nav class="nav" id="nav" aria-label="页面导航">
+    <div class="nav-rail"><b id="rail"></b></div>
+    <div class="nav-dot" id="navDot"></div>
+    <a href="#home" class="on"><span class="n">01</span><span class="t" data-i18n="nav.home">首页</span><span class="e" data-i18n="nav.home.e">HOME</span></a>
+    <a href="#about"><span class="n">02</span><span class="t" data-i18n="nav.about">关于我</span><span class="e" data-i18n="nav.about.e">ABOUT</span></a>
+    <a href="#resume"><span class="n">03</span><span class="t" data-i18n="nav.resume">经历</span><span class="e" data-i18n="nav.resume.e">RESUME</span></a>
+    <a href="#works"><span class="n">04</span><span class="t" data-i18n="nav.works">作品</span><span class="e" data-i18n="nav.works.e">WORKS</span></a>
+    <a href="#stack"><span class="n">05</span><span class="t" data-i18n="nav.stack">技能栈</span><span class="e" data-i18n="nav.stack.e">STACK</span></a>
+    <a href="#contact"><span class="n">06</span><span class="t" data-i18n="nav.contact">联系</span><span class="e" data-i18n="nav.contact.e">CONTACT</span></a>
+  </nav>
+
+  <div class="side-foot">
+    <div class="status mono"><span class="pulse"></span><span data-i18n="side.status">Available · 开放机会</span></div>
+    <div class="sys mono">
+      LOCAL <span id="clock">--:--:--</span><br />
+      LOC&nbsp;&nbsp; <span>SHANGHAI, CN</span><br />
+      GO&nbsp;&nbsp;&nbsp; <span>SINCE 2017</span>
+    </div>
+    <a class="btn-dark" href="resume.pdf" data-resume target="_blank" rel="noopener">RESUME.PDF <span>↓</span></a>
+  </div>
+</aside>
+
+<main>
+<!-- ============ 01 HOME ============ -->
+<section id="home">
+  <div class="cross" style="top:28px;right:28px"></div>
+  <div class="hero-text">
+    <div class="eyebrow rv"><span class="pulse"></span><span data-i18n="hero.eyebrow">GOPHER × 分布式系统 / AI INFRA BUILDER</span></div>
+    <h1 class="hero-name rv">Liam<span class="cn">林联敏</span></h1>
+    <p class="hero-lede rv" data-i18n="hero.lede">
+      <b>9 年 Go 后端</b>，从企业软件、视频 CDN 到千万级游戏社区，
+      专注<b>高并发、高可用</b>的分布式系统。<br />
+      现在用 Claude Code 与 Codex 重塑工程流水线，用 Go 构建 <b>AI 时代的后端基础设施</b>。
+    </p>
+    <div class="cta rv">
+      <a class="btn primary" href="#works"><span data-i18n="hero.cta1">查看作品</span> <span class="arr">→</span></a>
+      <a class="btn" href="#resume"><span data-i18n="hero.cta2">浏览简历</span> <span class="arr">→</span></a>
+    </div>
+  </div>
+
+  <div class="frame rv" aria-hidden="true">
+    <div class="photo" id="photo"></div>
+    <div class="scan"></div>
+    <svg class="traces" viewBox="0 0 600 648" preserveAspectRatio="none">
+      <path d="M150 0 V60 L200 110 H330" /><circle cx="330" cy="110" r="5" />
+      <path d="M100 648 V520 L140 480 V360" /><circle cx="140" cy="360" r="5" />
+      <path d="M560 60 V200" /><circle cx="560" cy="200" r="5" />
+      <path d="M575 240 V420 L520 480 V560" /><circle cx="520" cy="560" r="5" />
+      <path d="M40 180 H110 V300" /><circle cx="110" cy="300" r="4" />
+      <path class="flow" d="M150 0 V60 L200 110 H330" />
+      <path class="flow" d="M575 240 V420 L520 480 V560" style="animation-delay:-2s" />
+      <path class="flow" d="M100 648 V520 L140 480 V360" style="animation-delay:-3.4s" />
+      <rect x="548" y="300" width="8" height="8" /><rect x="548" y="316" width="8" height="8" /><rect x="548" y="332" width="8" height="8" opacity=".5" />
+      <rect x="30" y="600" width="8" height="8" opacity=".6" />
+    </svg>
+    <div class="hud tl"><span class="pulse"></span>AVAILABLE</div>
+    <div class="hud tr">AVATAR / <span id="photoIdx">01</span></div>
+    <div class="hud bl"><b>SUBJECT // LIAM-LIN</b><br />N 31°14′ &nbsp;E 121°28′<br />GOPHER · VER. 2026.09</div>
+    <div class="hud br" id="photoState">SCANNING…</div>
+    <div class="ph-tag" data-i18n="hero.ph">[ PHOTO · 临时占位 ]</div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>GOLANG</span><span>gRPC</span><span>MICROSERVICES</span><span>KAFKA</span><span>REDIS</span><span>KUBERNETES</span><span>ELASTICSEARCH</span><span>OPENRESTY</span><span>LLM GATEWAY</span><span>MCP</span><span>CLAUDE CODE</span><span>CODEX</span>
+      <span>GOLANG</span><span>gRPC</span><span>MICROSERVICES</span><span>KAFKA</span><span>REDIS</span><span>KUBERNETES</span><span>ELASTICSEARCH</span><span>OPENRESTY</span><span>LLM GATEWAY</span><span>MCP</span><span>CLAUDE CODE</span><span>CODEX</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 ABOUT ============ -->
+<section id="about">
+  <div class="sec-head rv">
+    <h2 class="sec-title" data-i18n="about.title">关于<em>。</em></h2>
+    <div class="sec-meta mono"><b>02 // ABOUT</b><br />WHO · WHY · HOW</div>
+  </div>
+  <div class="about">
+    <div>
+      <p class="about-lead rv" data-i18n="about.lead">好的后端是看不见的 —— 它在流量洪峰下依然<mark>安静、稳定、可预测</mark>，并且随业务<mark>持续演进</mark>。</p>
+      <div class="about-body rv">
+        <p data-i18n="about.p1">我是<b>林联敏</b>，也可以叫我 Liam，一名 Golang 资深后端工程师。2017 年入行，先后在<b>泛微、哔哩哔哩、心动网络（TapTap）和欢乐互娱</b>工作，从企业级 OA、视频 CDN，到千万月活的游戏社区与全球同服架构，经历了不同量级的系统挑战。</p>
+        <p data-i18n="about.p2">我擅长微服务架构与基础组件建设：<b>统一网关、鉴权授权、消息推送、多级缓存、监控告警</b>。相比“能跑起来”，我更在意系统在高峰时是否可观测、可降级、可扩展，以及团队能否在统一的规范下高效协作。</p>
+        <p data-i18n="about.p3">这两年，我把越来越多的精力投入到 <b>AI 工程</b>：用 Claude Code、Codex 重构自己的开发流程，并尝试用 Go 构建 LLM 网关、Agent 运行时、RAG 管线等基础设施 —— 让 AI 以工程化的方式进入生产环境。</p>
+      </div>
+
+      <div class="stats rv">
+        <div class="stat"><b data-i18n="stat1.v">9<small>年+</small></b><span data-i18n="stat1.l">Go 后端开发经验<br />since 2017</span></div>
+        <div class="stat"><b data-i18n="stat2.v">千万<small>级</small></b><span data-i18n="stat2.l">月活平台<br />服务端架构</span></div>
+      </div>
+
+      <div class="principles rv">
+        <div><span class="mono">P.01</span><h4 data-i18n="pr1.t">简单优先</h4><p data-i18n="pr1.d">能用清晰的十行解决，就不写聪明的一百行。</p></div>
+        <div><span class="mono">P.02</span><h4 data-i18n="pr2.t">可观测即可靠</h4><p data-i18n="pr2.d">没有监控告警的服务，等于没有真正上线。</p></div>
+        <div><span class="mono">P.03</span><h4 data-i18n="pr3.t">AI 杠杆</h4><p data-i18n="pr3.d">让 AI 承担重复劳动，人专注判断与设计。</p></div>
+      </div>
+    </div>
+
+    <div class="term rv" role="img" aria-label="终端：liam.go 个人信息代码">
+      <div class="term-bar"><span>~/liam — liam.go</span><b>LIVE</b></div>
+      <pre id="typed"></pre>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 RESUME ============ -->
+<section id="resume">
+  <div class="sec-head rv">
+    <h2 class="sec-title" data-i18n="resume.title">经历<em>。</em></h2>
+    <div class="sec-meta mono"><b>03 // RESUME</b><br />4 COMPANIES · SINCE 2017<br />SHANGHAI, CN</div>
+  </div>
+  <div class="resume">
+    <div class="tl-group">
+      <div class="tl-label mono rv">Work<b data-i18n="resume.work">工作经历</b></div>
+      <div class="tl-list">
+
+        <article class="tl-item now rv">
+          <div class="tl-when">2023.09 — NOW · <span data-i18n="loc.sh">上海</span></div>
+          <h3 class="tl-role" data-i18n="job1.role">欢乐互娱<span>Golang 资深研发工程师</span></h3>
+          <p class="tl-co" data-i18n="job1.co"><em>GAME</em>全球化游戏研发与发行公司</p>
+          <ul>
+            <li data-i18n="job1.l1">负责<b>游戏 SDK 服务端、旗舰社区 JoyMakers、藏宝阁</b>等核心项目的服务端整体架构设计与主要模块迭代。</li>
+            <li data-i18n="job1.l2">主导<b>全球同服</b>部署方案，面向多区域玩家提供高并发、低延迟且稳定的服务。</li>
+            <li data-i18n="job1.l3">建设微服务基础组件与监控告警机制，负责系统架构与协议设计，<b>统一后端团队的开发规范与基础标准</b>。</li>
+            <li data-i18n="job1.l4">支持跨部门技术合作，推动公共代码库建设与复用。</li>
+          </ul>
+          <div class="chips"><span class="chip">Go</span><span class="chip">gRPC</span><span class="chip">Gin</span><span class="chip">MySQL</span><span class="chip">Elasticsearch</span><span class="chip">Kafka</span><span class="chip">Redis</span><span class="chip">RocketMQ</span><span class="chip">K8s</span></div>
+        </article>
+
+        <article class="tl-item rv">
+          <div class="tl-when">2019.12 — 2023.08 · <span data-i18n="loc.sh">上海</span></div>
+          <h3 class="tl-role" data-i18n="job2.role">心动网络<span>Golang 资深研发工程师</span></h3>
+          <p class="tl-co" data-i18n="job2.co"><em>TAPTAP</em>国内最大的游戏社区平台 · 月活千万 · 港股上市</p>
+          <ul>
+            <li data-i18n="job2.l1">负责 <b>TapTap 主站</b>服务端，统一网关层以 RPC 协议接入各微服务，支撑高并发下的稳定访问。</li>
+            <li data-i18n="job2.l2">从 0 到 1 设计并开发<b>开放平台、用户中心、通知中心</b>等核心微服务。</li>
+            <li data-i18n="job2.l3">负责登录注册、OAuth 鉴权授权、通知推送等核心链路，其中通知推送服务<b>日均推送 3 亿次</b>。</li>
+            <li data-i18n="job2.l4">参与系统架构与协议设计，完善服务监控与告警体系。</li>
+          </ul>
+          <div class="chips"><span class="chip">Go</span><span class="chip">gRPC</span><span class="chip">Gin</span><span class="chip">OAuth2</span><span class="chip">MySQL</span><span class="chip">Elasticsearch</span><span class="chip">Kafka</span><span class="chip">Redis</span><span class="chip">RocketMQ</span><span class="chip">K8s</span></div>
+        </article>
+
+        <article class="tl-item rv">
+          <div class="tl-when">2019.02 — 2019.12 · <span data-i18n="loc.sh">上海</span></div>
+          <h3 class="tl-role" data-i18n="job3.role">哔哩哔哩<span>Golang 高级研发工程师</span></h3>
+          <p class="tl-co" data-i18n="job3.co"><em>BILIBILI</em>国内领先的视频弹幕网站 · 月活上亿 · 美股 &amp; 港股上市</p>
+          <ul>
+            <li data-i18n="job3.l1">负责<b>视频 CDN 服务</b>建设，基于 Nginx &amp; OpenResty 进行二次开发。</li>
+            <li data-i18n="job3.l2">设计按视频热度划分的<b>三级缓存</b>与内存淘汰机制，提升命中率、降低回源压力。</li>
+            <li data-i18n="job3.l3">分布式集群部署，集群内部<b>互相回源</b>，支持自动扩缩容；建设 CDN 节点监控告警。</li>
+          </ul>
+          <div class="chips"><span class="chip">Go</span><span class="chip">Nginx</span><span class="chip">OpenResty</span><span class="chip">gRPC</span><span class="chip">MySQL</span><span class="chip">Redis</span><span class="chip">K8s</span></div>
+        </article>
+
+        <article class="tl-item rv">
+          <div class="tl-when">2017.07 — 2019.02 · <span data-i18n="loc.sh">上海</span></div>
+          <h3 class="tl-role" data-i18n="job4.role">泛微网络<span>Golang 高级研发工程师</span></h3>
+          <p class="tl-co" data-i18n="job4.co"><em>OA</em>国内第一的 OA 软件厂商 · A 股上市</p>
+          <ul>
+            <li data-i18n="job4.l1">参与国内市场占有率最高的 <b>OA 产品</b>研发，负责模块的产品设计与开发，覆盖企业内部多种业务场景。</li>
+            <li data-i18n="job4.l2">开发 <b>Linux 一键部署工具</b>，简化私有化交付与运维流程。</li>
+          </ul>
+          <div class="chips"><span class="chip">Go</span><span class="chip">Nginx</span><span class="chip">MySQL</span><span class="chip">Redis</span><span class="chip">Kafka</span><span class="chip">Linux</span></div>
+        </article>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 04 WORKS ============ -->
+<section id="works">
+  <div class="sec-head rv">
+    <h2 class="sec-title" data-i18n="works.title">作品<em>。</em></h2>
+    <div class="sec-meta mono"><b>LOG // BUILDING WITH GO</b><br />SIDE PROJECTS · OSS · EXPERIMENTS<br />AI × DISTRIBUTED SYSTEMS</div>
+  </div>
+  <div class="filters rv" id="filters" role="toolbar" aria-label="作品筛选">
+    <button class="on" data-f="all" aria-pressed="true" data-i18n="f.all">全部</button>
+    <button data-f="ai" aria-pressed="false" data-i18n="f.ai">AI 工程</button>
+    <button data-f="dist" aria-pressed="false" data-i18n="f.dist">分布式</button>
+    <button data-f="tool" aria-pressed="false" data-i18n="f.tool">工具链</button>
+  </div>
+
+  <!--
+    每个作品的 .metric 上可加 data-repo="owner/name"，
+    页面会通过 GitHub API 实时显示 star 数；不填则显示构建状态。
+  -->
+  <div class="works" id="works-list">
+    <a class="work rv" data-c="ai" href="https://github.com/mingolm" target="_blank" rel="noopener">
+      <div class="w-no">01</div>
+      <div>
+        <div class="w-meta"><span class="tag" data-i18n="w1.tag">AI / AGENT</span>· 2026 · Go</div>
+        <h3 class="w-title" data-i18n="w1.title">Gopher Agent <span>— Go 原生 Agent 运行时</span></h3>
+        <p class="w-desc" data-i18n="w1.desc">用 goroutine 调度多 Agent 并发执行，原生支持 MCP 工具协议、流式输出、断点续跑与全链路 Trace。单一二进制部署，把 Agent 当作普通微服务来治理和运维。</p>
+      </div>
+      <div class="chips"><span class="chip">Go</span><span class="chip">MCP</span><span class="chip">gRPC</span><span class="chip">OpenTelemetry</span></div>
+      <div class="metric" data-repo=""><div class="row"><span>BUILD // STATUS</span><b>●</b></div><div class="num">WIP</div><div class="row"><span>// GO · RUNTIME</span></div></div>
+      <div class="w-arr">→</div>
+    </a>
+
+    <a class="work rv" data-c="ai" href="https://github.com/mingolm" target="_blank" rel="noopener">
+      <div class="w-no">02</div>
+      <div>
+        <div class="w-meta"><span class="tag" data-i18n="w2.tag">AI / INFRA</span>· 2026 · Go</div>
+        <h3 class="w-title" data-i18n="w2.title">LLM Gateway <span>— 多模型统一接入网关</span></h3>
+        <p class="w-desc" data-i18n="w2.desc">兼容 OpenAI 协议接入多家大模型，提供智能路由、限流熔断、故障降级、语义缓存与 Token 计量计费 —— 把多年统一网关的经验迁移到 AI 流量上。</p>
+      </div>
+      <div class="chips"><span class="chip">Go</span><span class="chip">Redis</span><span class="chip">Kafka</span><span class="chip">SSE</span></div>
+      <div class="metric" data-repo=""><div class="row"><span>BUILD // STATUS</span><b>●</b></div><div class="num">BETA</div><div class="row"><span>// GO · GATEWAY</span></div></div>
+      <div class="w-arr">→</div>
+    </a>
+
+    <a class="work rv" data-c="dist" href="https://github.com/mingolm" target="_blank" rel="noopener">
+      <div class="w-no">03</div>
+      <div>
+        <div class="w-meta"><span class="tag" data-i18n="w3.tag">分布式 / 消息</span>· 2025 · Go</div>
+        <h3 class="w-title" data-i18n="w3.title">Beacon <span>— 高并发消息推送引擎</span></h3>
+        <p class="w-desc" data-i18n="w3.desc">沉淀自通知中心的实践：长连接网关 + 分片路由 + ACK 重试 + 优先级队列，面向亿级日推送量设计，统一站内信、App Push、邮件等多通道投递。</p>
+      </div>
+      <div class="chips"><span class="chip">Go</span><span class="chip">WebSocket</span><span class="chip">Kafka</span><span class="chip">etcd</span></div>
+      <div class="metric" data-repo=""><div class="row"><span>BUILD // STATUS</span><b>●</b></div><div class="num">ALPHA</div><div class="row"><span>// GO · PUSH</span></div></div>
+      <div class="w-arr">→</div>
+    </a>
+
+    <a class="work rv" data-c="dist" href="https://github.com/mingolm" target="_blank" rel="noopener">
+      <div class="w-no">04</div>
+      <div>
+        <div class="w-meta"><span class="tag" data-i18n="w4.tag">分布式 / 缓存</span>· 2025 · Go</div>
+        <h3 class="w-title" data-i18n="w4.title">TierCache <span>— 热度感知的多级缓存库</span></h3>
+        <p class="w-desc" data-i18n="w4.desc">本地 LRU + Redis + 回源三级缓存，按访问热度自动升降级，内置 singleflight 防击穿、随机过期防雪崩与失效广播，源自视频 CDN 三级缓存的设计思路。</p>
+      </div>
+      <div class="chips"><span class="chip">Go</span><span class="chip">Redis</span><span class="chip">singleflight</span></div>
+      <div class="metric" data-repo=""><div class="row"><span>BUILD // STATUS</span><b>●</b></div><div class="num">OSS</div><div class="row"><span>// GO · LIBRARY</span></div></div>
+      <div class="w-arr">→</div>
+    </a>
+
+    <a class="work rv" data-c="ai" href="https://github.com/mingolm" target="_blank" rel="noopener">
+      <div class="w-no">05</div>
+      <div>
+        <div class="w-meta"><span class="tag" data-i18n="w5.tag">AI / RAG</span>· 2026 · Go</div>
+        <h3 class="w-title" data-i18n="w5.title">go-rag <span>— Go 实现的 RAG 工具包</span></h3>
+        <p class="w-desc" data-i18n="w5.desc">文档切分、向量化、BM25 + 向量混合检索与 Rerank 的一站式管线，对接 Milvus / Elasticsearch，为 Go 服务提供开箱即用的知识库问答能力。</p>
+      </div>
+      <div class="chips"><span class="chip">Go</span><span class="chip">Milvus</span><span class="chip">Elasticsearch</span></div>
+      <div class="metric" data-repo=""><div class="row"><span>BUILD // STATUS</span><b>●</b></div><div class="num">WIP</div><div class="row"><span>// GO · PIPELINE</span></div></div>
+      <div class="w-arr">→</div>
+    </a>
+
+    <a class="work rv" data-c="tool" href="https://github.com/mingolm" target="_blank" rel="noopener">
+      <div class="w-no">06</div>
+      <div>
+        <div class="w-meta"><span class="tag" data-i18n="w6.tag">工具链</span>· 2026 · Claude Plugin</div>
+        <h3 class="w-title" data-i18n="w6.title">gopher-skills <span>— Go 微服务的 Claude Code 插件</span></h3>
+        <p class="w-desc" data-i18n="w6.desc">一组面向 Go 工程的 Claude Code Skills：一键生成 gRPC 服务骨架、表驱动单元测试、pprof 性能诊断报告与 Code Review 清单，让团队规范可以被 AI 执行。</p>
+      </div>
+      <div class="chips"><span class="chip">Claude Code</span><span class="chip">Go</span><span class="chip">pprof</span></div>
+      <div class="metric" data-repo=""><div class="row"><span>BUILD // STATUS</span><b>●</b></div><div class="num">BETA</div><div class="row"><span>// SKILLS · PLUGIN</span></div></div>
+      <div class="w-arr">→</div>
+    </a>
+  </div>
+  <p class="works-note mono rv">MORE ON GITHUB → <a href="https://github.com/mingolm" target="_blank" rel="noopener" style="color:var(--ink)">@mingolm</a></p>
+</section>
+
+<!-- ============ 05 STACK ============ -->
+<section id="stack">
+  <div class="sec-head rv">
+    <h2 class="sec-title" data-i18n="stack.title">技能栈<em>。</em></h2>
+    <div class="sec-meta mono"><b>05 // STACK</b><br />TOOLS I THINK WITH</div>
+  </div>
+  <div class="stack rv">
+    <div class="cell c-core">
+      <div class="mono"><span>MODULE // CORE</span><span style="color:var(--accent)">● GOLANG</span></div>
+      <h3 data-i18n="s1.t">Go <em>×</em> 高并发</h3>
+      <p data-i18n="s1.d">精通 Go 开发，熟练掌握并发编程与运行时机制，擅长使用 pprof / trace 做性能剖析与调优；对高并发、高可用、高扩展性的系统设计有深入理解和丰富实践。</p>
+      <div class="chips">
+        <span class="chip hot">Goroutine</span><span class="chip hot">Channel</span><span class="chip">pprof</span><span class="chip">GC Tuning</span><span class="chip">Generics</span><span class="chip">Gin</span><span class="chip">gRPC</span>
+      </div>
+      <div class="gmp">
+        <div class="gmp-head mono"><span>GMP SCHEDULER // LIVE</span><span>G <b id="gCount">0</b> · P 4</span></div>
+        <canvas id="gmp" aria-hidden="true"></canvas>
+      </div>
+    </div>
+    <div class="cell c-ms">
+      <div class="mono"><span>MODULE // MICROSERVICE</span><span>02</span></div>
+      <h3 data-i18n="s2.t">微服务 &amp; 协议</h3>
+      <p data-i18n="s2.d">具备从零设计与开发微服务体系的能力，覆盖网关、鉴权、服务治理。</p>
+      <div class="chips"><span class="chip">gRPC</span><span class="chip">Protobuf</span><span class="chip">HTTP</span><span class="chip">OAuth2</span><span class="chip">RESTful</span><span class="chip">API Gateway</span></div>
+    </div>
+    <div class="cell c-data">
+      <div class="mono"><span>MODULE // DATA</span><span>03</span></div>
+      <h3 data-i18n="s3.t">数据库 &amp; 中间件</h3>
+      <p data-i18n="s3.d">熟悉存储选型、缓存一致性与消息可靠投递。</p>
+      <div class="chips"><span class="chip">MySQL</span><span class="chip">Redis</span><span class="chip">Elasticsearch</span><span class="chip">Kafka</span><span class="chip">RocketMQ</span><span class="chip" data-i18n="chip.ddb">分布式数据库</span></div>
+    </div>
+    <div class="cell c-infra">
+      <div class="mono"><span>MODULE // INFRA</span><span>04</span></div>
+      <h3 data-i18n="s4.t">基础设施 &amp; 运维</h3>
+      <p data-i18n="s4.d">具备独立部署和维护大规模集群的能力，熟悉 TCP/IP 等网络基础。</p>
+      <div class="chips"><span class="chip">Linux</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Nginx</span><span class="chip">OpenResty</span><span class="chip">TCP/IP</span><span class="chip" data-i18n="chip.mon">监控告警</span></div>
+    </div>
+    <div class="cell c-ai">
+      <svg class="neural" id="neural" viewBox="0 0 300 200" aria-hidden="true"></svg>
+      <div class="mono"><span>MODULE // AI-NATIVE</span><span style="color:var(--accent)">● NEW</span></div>
+      <h3 data-i18n="s5.t">AI 工程</h3>
+      <p data-i18n="s5.d">用 AI 编码工具重塑开发流程，用 Go 构建 AI 基础设施。</p>
+      <div class="chips"><span class="chip hot">Claude Code</span><span class="chip hot">Codex</span><span class="chip">MCP</span><span class="chip">RAG</span><span class="chip">LLM Gateway</span><span class="chip">Prompt Eng.</span></div>
+      <div class="flow-steps" aria-label="构建流程"><span>IDEA</span><i>→</i><span>SPEC</span><i>→</i><span class="hot">AGENT</span><i>→</i><span>REVIEW</span><i>→</i><span>SHIP</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 CONTACT ============ -->
+<section id="contact">
+  <div>
+    <div class="sec-meta mono rv" style="text-align:left;margin-bottom:40px"><b>06 // CONTACT</b><br />OPEN TO WORK · COLLAB · CHAT</div>
+    <h2 class="big rv">Let’s <em>build</em><br />something.<span class="cn" data-i18n="contact.cn">一起构建稳定、可扩展、AI 驱动的系统。</span></h2>
+    <a class="mail rv" href="mailto:ahayeslin@gmail.com">ahayeslin@gmail.com <span>↗</span></a>
+    <div class="socials rv">
+      <a class="social" href="https://github.com/mingolm" target="_blank" rel="noopener">
+        <div><span class="mono">01</span><strong>GitHub</strong><small id="ghMeta">@mingolm</small></div>↗
+      </a>
+      <a class="social" href="mailto:ahayeslin@gmail.com">
+        <div><span class="mono">02</span><strong>Email</strong><small>ahayeslin@gmail.com</small></div>↗
+      </a>
+      <button class="social" id="wechat" type="button" aria-expanded="false">
+        <div><span class="mono">03</span><strong data-i18n="wx.t">微信</strong><small data-i18n="wx.s">扫码添加</small></div>↗
+        <div class="qr" role="tooltip">
+          <div class="qr-ph" id="qrBox">[ WECHAT QR ]<br />assets/img/wechat-qr.png</div>
+          <span data-i18n="wx.scan">微信扫一扫</span>
+        </div>
+      </button>
+      <a class="social" href="resume.pdf" data-resume target="_blank" rel="noopener">
+        <div><span class="mono">04</span><strong data-i18n="cv.t">简历 PDF</strong><small>RESUME · 2026</small></div>↓
+      </a>
+    </div>
+  </div>
+  <div class="foot mono">
+    <span>© 2026 林联敏 LIAM</span>
+    <span>BUILT WITH GO MINDSET · CLAUDE CODE · VERCEL</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </div>
+</section>
+</main>
+
+<div class="coord" id="coord" aria-hidden="true">X <b>0000</b> · Y <b>0000</b> · SCROLL <b>000%</b></div>
+
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
