@@ -336,8 +336,10 @@ section + section { border-top: 1px solid var(--line); }
 .social .mono { color: var(--muted); display: block; margin-bottom: 4px; }
 .social strong { font-size: 19px; font-weight: 500; }
 .social small { display: block; font-family: var(--f-mono); font-size: 11px; color: var(--muted); margin-top: 2px; letter-spacing: .04em; }
-.qr { position: absolute; bottom: calc(100% + 12px); left: 22px; width: 180px; background: var(--paper); border: 1px solid var(--ink); padding: 12px; box-shadow: 0 20px 40px -20px rgba(27, 24, 20, .4); opacity: 0; transform: translateY(8px); pointer-events: none; transition: .3s var(--ease); z-index: 5; color: var(--ink); }
-.qr img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.qr { position: absolute; bottom: calc(100% + 12px); left: 22px; width: 240px; background: var(--paper); border: 1px solid var(--ink); padding: 12px; box-shadow: 0 20px 40px -20px rgba(27, 24, 20, .4); opacity: 0; transform: translateY(8px); pointer-events: none; transition: .3s var(--ease); z-index: 5; color: var(--ink); }
+.qr img { display: block; width: 100%; height: auto; }
+.qr.has-img { padding: 6px; }
+.qr.has-img > span { display: none; }
 .qr .qr-ph { aspect-ratio: 1; border: 1px dashed var(--ink-2); display: grid; place-items: center; text-align: center; font-family: var(--f-mono); font-size: 10px; letter-spacing: .14em; color: var(--muted); padding: 8px; }
 .qr span { display: block; margin-top: 8px; font-size: 12px; text-align: center; }
 .social.open .qr, .social:hover .qr, .social:focus-visible .qr { opacity: 1; transform: none; }

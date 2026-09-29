@@ -32,9 +32,9 @@ python3 -m http.server 5788
 |---|---|
 | 文案、经历、作品 | `index.html` |
 | 首页照片 | `assets/js/main.js` 顶部 `PHOTOS` 数组，换成 `assets/img/xxx.jpg` |
-| 微信二维码 | 放一张 `assets/img/wechat-qr.png`，自动显示 |
+| 微信二维码 | 替换 `assets/img/wechat-qr.jpg` |
 | 简历下载 | 在根目录放 `resume.pdf`；不存在时按钮会跳转到「经历」模块 |
-| 作品 star 数 | 给 `.metric` 加 `data-repo="mingolm/仓库名"`，自动拉取 GitHub star |
+| 作品 star 数 | 给 `.metric` 加 `data-repo="liam572/仓库名"`，自动拉取 GitHub star |
 | 配色 / 字体 | `assets/css/style.css` 顶部 `:root` |
 | 英文文案 | `assets/js/i18n.js`，按 `data-i18n` 的 key 对应 `index.html` 中的中文 |
 
@@ -46,7 +46,7 @@ python3 -m http.server 5788
    ```bash
    git init && git add . && git commit -m "init: personal site"
    git branch -M main
-   git remote add origin git@github.com:mingolm/<repo>.git
+   git remote add origin git@github.com:liam572/<repo>.git
    git push -u origin main
    ```
 2. 登录 [vercel.com](https://vercel.com) → **Add New… → Project** → 导入该仓库。

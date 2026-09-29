@@ -11,8 +11,8 @@ const PHOTOS = [
   'https://picsum.photos/seed/liam-city/800/960',
 ];
 const PHOTO_INTERVAL = 4500;
-const GITHUB_USER = 'mingolm';
-const WECHAT_QR = 'assets/img/wechat-qr.png';
+const GITHUB_USER = 'liam572';
+const WECHAT_QR = 'assets/img/wechat-qr.jpg';
 const RESUME_PDF = 'resume.pdf';
 
 (() => {
@@ -268,7 +268,7 @@ const RESUME_PDF = 'resume.pdf';
   const wechat = $('#wechat');
   const qr = new Image();
   qr.alt = '微信二维码';
-  qr.onload = () => { const box = $('#qrBox'); box.replaceWith(qr); };
+  qr.onload = () => { const box = $('#qrBox'); box.parentElement.classList.add('has-img'); box.replaceWith(qr); };
   qr.src = WECHAT_QR;
   wechat.addEventListener('click', e => {
     e.stopPropagation();
