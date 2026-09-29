@@ -30,7 +30,6 @@ window.I18N = {
     'hero.lede': '<b>9 years building backends in Go</b> — from enterprise software and video CDN to game communities with tens of millions of users, focused on <b>high-concurrency, high-availability</b> distributed systems.<br />Now reshaping my engineering workflow with Claude Code &amp; Codex, and building <b>backend infrastructure for the AI era</b> in Go.',
     'hero.cta1': 'View works',
     'hero.cta2': 'Read résumé',
-    'hero.ph': '[ PHOTO · PLACEHOLDER ]',
 
     /* 02 about */
     'about.title': 'About<em>.</em>',

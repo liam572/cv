@@ -4,11 +4,12 @@
 
 /* ---------- 可配置项 ---------- */
 // 首页照片轮播：替换成你自己的照片，例如 'assets/img/photo-1.jpg'
+// 目前是 AI 生成的动漫人像占位（Animagine XL 4.0）
 const PHOTOS = [
-  'https://picsum.photos/seed/liam-portrait/800/960',
-  'https://picsum.photos/seed/liam-studio/800/960',
-  'https://picsum.photos/seed/liam-desk/800/960',
-  'https://picsum.photos/seed/liam-city/800/960',
+  'assets/img/avatars/anime-1.jpg',
+  'assets/img/avatars/anime-2.jpg',
+  'assets/img/avatars/anime-3.jpg',
+  'assets/img/avatars/anime-4.jpg',
 ];
 const PHOTO_INTERVAL = 4500;
 const GITHUB_USER = 'liam572';
@@ -162,6 +163,7 @@ const RESUME_PDF = 'resume.pdf';
     const im = new Image();
     im.alt = '';
     im.decoding = 'async';
+    if (/\.svg(\?|$)/i.test(src)) im.classList.add('illus');
     im.onload = () => {
       imgs.push(im);
       photo.appendChild(im);

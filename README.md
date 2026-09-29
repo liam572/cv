@@ -59,4 +59,4 @@ python3 -m http.server 5788
 字体来自 Google Fonts，国内网络可能加载缓慢，此时会回退到系统字体（苹方 / 宋体），页面仍可正常使用。
 如需加速，可把 `index.html` 中的 `fonts.googleapis.com` 替换为可用的国内镜像，
 或自行下载字体子集放入 `assets/fonts/` 并改为 `@font-face` 引入。
-临时占位照片来自 picsum.photos，替换为本地照片后即不再依赖外部服务。
+首页占位动漫人像由 AI 生成（Animagine XL 4.0），已放在 `assets/img/avatars/`，不依赖外部服务。
