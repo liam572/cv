@@ -5,10 +5,13 @@
 ```
 .
 ├── index.html            # 页面结构与全部文案
+├── journal/              # 年度总结全文，每年一篇：2018.html … 2025.html
 ├── assets/
 │   ├── css/style.css     # 设计 tokens + 样式
+│   ├── css/journal.css   # 年度总结文章页样式
 │   ├── js/main.js        # 交互（导航、中英切换、照片轮播、终端、GMP 动画等）
 │   ├── js/i18n.js        # 英文文案
+│   ├── js/journal.js     # 年度总结页：阅读进度、目录高亮、← / → 翻页
 │   └── img/              # favicon、照片、微信二维码
 ├── resume.pdf            # （可选）放一份脱敏简历，按钮会自动生效
 └── design/               # 设计稿，不参与部署
@@ -36,6 +39,8 @@ python3 -m http.server 5788
 | 简历下载 | 在根目录放 `resume.pdf`；不存在时按钮会跳转到「经历」模块 |
 | 作品 star 数 | 给 `.metric` 加 `data-repo="liam572/仓库名"`，自动拉取 GitHub star |
 | 配色 / 字体 | `assets/css/style.css` 顶部 `:root` |
+| 年度总结正文 | `journal/<年份>.html`；首页卡片（标题、摘要）在 `index.html` 的 `#journal` 模块 |
+| 新增一年总结 | 复制上一年的 `journal/<年份>.html` 改内容，并更新各页的年份轴 / 上下篇链接，在首页 `#journal` 加一张卡片 |
 | 英文文案 | `assets/js/i18n.js`，按 `data-i18n` 的 key 对应 `index.html` 中的中文 |
 
 > 建议公开的简历 PDF 去掉手机号、出生日期等个人敏感信息。

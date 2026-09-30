@@ -22,6 +22,7 @@ window.I18N = {
     'nav.resume': 'Experience', 'nav.resume.e': '经历',
     'nav.works': 'Works', 'nav.works.e': '作品',
     'nav.stack': 'Stack', 'nav.stack.e': '技能',
+    'nav.journal': 'Annual Review', 'nav.journal.e': '年度总结',
     'nav.contact': 'Contact', 'nav.contact.e': '联系',
     'side.status': 'Open to work',
 
@@ -116,7 +117,28 @@ window.I18N = {
     'chip.ddb': 'Distributed DB',
     'chip.mon': 'Monitoring &amp; Alerting',
 
-    /* 06 contact */
+    /* 06 journal */
+    'journal.title': 'Annual Review<em>.</em>',
+    'journal.intro': 'On the last day of every year I jot down a few lines: how work went, how the family is doing, what I got out of the year, and what I want to do next.',
+    'journal.note': '8 entries · ~1,000 characters each · written in Chinese',
+    'j18.t': 'My first year in Shanghai',
+    'j18.ex': 'My first full-time job, and I settled in faster than expected. New to the workplace, full of energy, with good colleagues around me.',
+    'j19.t': 'A steady second year',
+    'j19.ex': 'Year two: life and work both found their rhythm, and my tech stack matured. I also took care of one of life’s big events — I got married.',
+    'j20.t': 'New company, new tech',
+    'j20.ex': 'My first year at TapTap brought a whole new set of technologies. I learned them from scratch — and it went well.',
+    'j21.t': 'Our son was born',
+    'j21.ex': 'My wife went back to our hometown to give birth, and our son arrived. The pandemic hit out of nowhere — at first I was confused and didn’t take it too seriously.',
+    'j22.t': 'We bought a home in Shanghai',
+    'j22.ex': 'We bought a place in Shanghai — somewhere to put down roots. The pandemic got worse, but I wasn’t afraid, and our son kept growing up healthy.',
+    'j23.t': 'A new job at year’s end',
+    'j23.ex': 'After four years at XD, I moved to JoyMaker at the end of the year. It’s a long way from home and the commute got longer, but my new colleagues are great.',
+    'j24.t': 'Our son started kindergarten',
+    'j24.ex': 'Our son started kindergarten and we traveled more as a family. At work, AI tools became part of my daily routine.',
+    'j25.t': 'A Xinjiang road trip, and what AI changed',
+    'j25.ex': 'A dozen-plus days driving around Xinjiang — pure joy. At work, AI shook things up hard, and it made me rethink where my career is heading.',
+
+    /* 07 contact */
     'contact.cn': 'Stable, scalable, AI-driven systems — let’s build them together.',
     'wx.t': 'WeChat',
     'wx.s': 'Scan to add',

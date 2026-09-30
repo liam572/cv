@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2020 · 新公司，新技术 — Liam 的年度总结</title>
+<meta name="description" content="在 TapTap 的第一年，接触了一整套新的技术，从零开始学，也学得比较成功。" />
+<meta name="author" content="林联敏 Liam" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="2020 · 新公司，新技术" />
+<meta property="og:description" content="在 TapTap 的第一年，接触了一整套新的技术，从零开始学，也学得比较成功。" />
+<meta name="theme-color" content="#F2EDE3" />
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans:wght@300;400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/style.css" />
+<link rel="stylesheet" href="../assets/css/journal.css" />
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="jr">
+
+<header class="jbar">
+  <a class="brand" href="../">Liam<i></i></a>
+  <span class="mono jbar-mid">年度总结 · VOL.03 / 08</span>
+  <a class="mono jbar-back" href="../#journal">← <span>ALL ENTRIES</span></a>
+  <div class="jbar-prog" aria-hidden="true"><b id="prog"></b></div>
+</header>
+
+<main class="jmain">
+  <header class="jhero">
+    <div class="jhero-meta mono rv"><span><b>VOL.03</b> // ANNUAL REVIEW</span><span>SHANGHAI · 2020.12.31</span></div>
+    <div class="jhero-year rv" aria-hidden="true"><span class="o">20</span>20</div>
+    <div class="jhero-row rv">
+      <span class="seal" aria-hidden="true">充电</span>
+      <div>
+        <h1 class="jhero-title"><span class="sr-only">2020 · </span>新公司，<br />新技术</h1>
+        <p class="jhero-lede">换一个环境，从头学起。</p>
+      </div>
+    </div>
+    <div class="jhero-stats mono rv"><span>两个人</span><span>约 784 字</span><span>阅读 2 分钟</span></div>
+  </header>
+
+  <nav class="jyears rv" aria-label="年份">
+    <div class="jyears-rail">
+      <a class="past" href="2018.html"><i></i><span><em>20</em>18</span></a>
+      <a class="past" href="2019.html"><i></i><span><em>20</em>19</span></a>
+      <a class="on" href="2020.html" aria-current="page"><i></i><span><em>20</em>20</span></a>
+      <a class="" href="2021.html"><i></i><span><em>20</em>21</span></a>
+      <a class="" href="2022.html"><i></i><span><em>20</em>22</span></a>
+      <a class="" href="2023.html"><i></i><span><em>20</em>23</span></a>
+      <a class="" href="2024.html"><i></i><span><em>20</em>24</span></a>
+      <a class="" href="2025.html"><i></i><span><em>20</em>25</span></a>
+    </div>
+  </nav>
+
+  <div class="jbody">
+    <aside class="jfile">
+      <div class="jfile-card">
+        <div class="jfile-head mono"><span>YEAR FILE</span><b>2020</b></div>
+        <dl>
+          <div><dt class="mono">HOME</dt><dd>两个人</dd></div>
+          <div><dt class="mono">CITY</dt><dd>上海</dd></div>
+          <div><dt class="mono">WORK</dt><dd>心动网络 · TapTap</dd></div>
+        </dl>
+        <div class="chips"><span class="chip">微服务</span><span class="chip">gRPC</span><span class="chip">OAuth2</span><span class="chip">Kafka</span></div>
+      </div>
+      <div class="jtoc">
+        <div class="mono">CONTENTS</div>
+        <ol id="toc">
+          <li><a href="#s1"><span>§01</span>新环境</a></li>
+          <li><a href="#s2"><span>§02</span>学新东西</a></li>
+          <li><a href="#s3"><span>§03</span>学得怎么样</a></li>
+          <li><a href="#s4"><span>§04</span>生活</a></li>
+          <li><a href="#next"><span>§05</span>展望 2021</a></li>
+        </ol>
+      </div>
+    </aside>
+
+    <article class="jarticle">
+      <section class="j-sec" id="s1">
+        <h2><span class="mono">§01</span>新环境</h2>
+        <p>2020 年是在心动的第一个完整年份，做 TapTap 的服务端。新公司的节奏、流程、代码规范都和之前不一样，前两个月基本都在读代码、看文档、熟悉业务。</p>
+        <p>这里的系统是一整套微服务：网关统一接入，后面是几十个服务通过 RPC 互相调用。刚来的时候光是理清一个请求从进来到返回经过了哪些服务，就花了不少时间。</p>
+        <p>好在团队氛围不错，带我熟悉业务的同事很有耐心，有问题随时能找到人，适应期比预想的短。</p>
+      </section>
+      <section class="j-sec" id="s2">
+        <h2><span class="mono">§02</span>学新东西</h2>
+        <p>这一年接触的新技术很多：gRPC 和 Protobuf、服务注册与发现、Kafka 消息队列、Elasticsearch、Kubernetes 上的部署和运维。以前只是听说过，现在每天都在用。</p>
+        <p>我给自己的方法很简单：先会用，再搞懂原理。每学一样东西，就找一个真实的需求去用它，用完了再回头看文档和源码，把不明白的地方补上。周末也会花半天时间看书、做笔记。</p>
+        <p>工作上参与了开放平台和用户中心的开发，负责登录注册、OAuth 授权这些模块。第一次完整实现一套授权协议，细节比想象中多得多，但做下来对安全、对协议设计的理解深了一层。</p>
+      </section>
+      <blockquote class="j-quote"><p>先会用，再搞懂原理。</p><cite class="mono">— LIAM · 2020</cite></blockquote>
+      <section class="j-sec" id="s3">
+        <h2><span class="mono">§03</span>学得怎么样</h2>
+        <p>年底自己评估了一下，这一年的学习算是比较成功的。新技术基本都能上手用，核心模块能独立负责，设计评审时也能提出自己的意见了。</p>
+        <p>最大的收获不是某一项具体技术，而是学东西的方法：面对一个陌生的系统，知道从哪里下手，怎么拆开来一点点弄明白。</p>
+        <p>当然也有没做好的地方：刚开始做设计时想得太复杂，抽象了很多层，后来发现用不上，又删掉了一部分。简单够用，比设计得漂亮更重要。</p>
+      </section>
+      <section class="j-sec" id="s4">
+        <h2><span class="mono">§04</span>生活</h2>
+        <p>生活上比较平稳，没什么大事。工作日忙，周末就在家休息，偶尔出去吃顿饭、看场电影。</p>
+        <p>这一年开始规律锻炼，每周跑两三次步，体重控制得还行。也看了一些闲书，算是给脑子换换频道。</p>
+      </section>
+
+      <section class="j-next" id="next">
+        <div class="j-next-bar mono"><span>~/journal — plan-2021.todo</span><b>NEXT YEAR</b></div>
+        <div class="j-next-body">
+          <h2>展望 2021</h2>
+          <ul>
+          <li><span class="bx">[ ]</span><span>把 Kafka 和消息可靠投递吃透</span></li>
+          <li><span class="bx">[ ]</span><span>独立负责一个核心服务</span></li>
+          <li><span class="bx">[ ]</span><span>每季度做一次技术分享</span></li>
+          <li><span class="bx">[ ]</span><span>保持锻炼</span></li>
+          </ul>
+          <p class="j-next-close">2021，把学到的东西真正用起来。</p>
+        </div>
+      </section>
+
+      <p class="j-sign">—— Liam<span class="mono">WRITTEN ON 2020.12.31 · SHANGHAI</span></p>
+    </article>
+  </div>
+
+  <nav class="jpager" aria-label="上一篇 / 下一篇">
+    <a class="pg prev" href="2019.html">
+      <span class="mono">← PREV · VOL.02</span>
+      <b>2019</b>
+      <span class="pg-t">有条不紊的第二年</span>
+    </a>
+    <a class="pg next" href="2021.html">
+      <span class="mono">NEXT · VOL.04 →</span>
+      <b>2021</b>
+      <span class="pg-t">儿子出生了</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="jfoot mono">
+  <span>© 2026 林联敏 LIAM</span>
+  <a href="../#journal">BACK TO ALL REVIEWS ↑</a>
+</footer>
+
+<script src="../assets/js/journal.js" defer></script>
+</body>
+</html>

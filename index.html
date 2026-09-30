@@ -47,7 +47,8 @@
     <a href="#resume"><span class="n">03</span><span class="t" data-i18n="nav.resume">经历</span><span class="e" data-i18n="nav.resume.e">RESUME</span></a>
     <a href="#works"><span class="n">04</span><span class="t" data-i18n="nav.works">作品</span><span class="e" data-i18n="nav.works.e">WORKS</span></a>
     <a href="#stack"><span class="n">05</span><span class="t" data-i18n="nav.stack">技能栈</span><span class="e" data-i18n="nav.stack.e">STACK</span></a>
-    <a href="#contact"><span class="n">06</span><span class="t" data-i18n="nav.contact">联系</span><span class="e" data-i18n="nav.contact.e">CONTACT</span></a>
+    <a href="#journal"><span class="n">06</span><span class="t" data-i18n="nav.journal">年度总结</span><span class="e" data-i18n="nav.journal.e">REVIEW</span></a>
+    <a href="#contact"><span class="n">07</span><span class="t" data-i18n="nav.contact">联系</span><span class="e" data-i18n="nav.contact.e">CONTACT</span></a>
   </nav>
 
   <div class="side-foot">
@@ -324,19 +325,19 @@
       <div class="mono"><span>MODULE // MICROSERVICE</span><span>02</span></div>
       <h3 data-i18n="s2.t">微服务 &amp; 协议</h3>
       <p data-i18n="s2.d">具备从零设计与开发微服务体系的能力，覆盖网关、鉴权、服务治理。</p>
-      <div class="chips"><span class="chip">gRPC</span><span class="chip">Protobuf</span><span class="chip">HTTP</span><span class="chip">OAuth2</span><span class="chip">RESTful</span><span class="chip">API Gateway</span></div>
+      <div class="chips"><span class="chip">gRPC</span><span class="chip">Protobuf</span><span class="chip">HTTP</span><span class="chip">OAuth2</span><span class="chip">RESTful</span><span class="chip">API Gateway</span><span class="chip">Temporal</span></div>
     </div>
     <div class="cell c-data">
       <div class="mono"><span>MODULE // DATA</span><span>03</span></div>
       <h3 data-i18n="s3.t">数据库 &amp; 中间件</h3>
       <p data-i18n="s3.d">熟悉存储选型、缓存一致性与消息可靠投递。</p>
-      <div class="chips"><span class="chip">MySQL</span><span class="chip">Redis</span><span class="chip">Elasticsearch</span><span class="chip">Kafka</span><span class="chip">RocketMQ</span><span class="chip" data-i18n="chip.ddb">分布式数据库</span></div>
+      <div class="chips"><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">Redis</span><span class="chip">Elasticsearch</span><span class="chip">Kafka</span><span class="chip">RocketMQ</span><span class="chip" data-i18n="chip.ddb">分布式数据库</span></div>
     </div>
     <div class="cell c-infra">
       <div class="mono"><span>MODULE // INFRA</span><span>04</span></div>
       <h3 data-i18n="s4.t">基础设施 &amp; 运维</h3>
       <p data-i18n="s4.d">具备独立部署和维护大规模集群的能力，熟悉 TCP/IP 等网络基础。</p>
-      <div class="chips"><span class="chip">Linux</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Nginx</span><span class="chip">OpenResty</span><span class="chip">TCP/IP</span><span class="chip" data-i18n="chip.mon">监控告警</span></div>
+      <div class="chips"><span class="chip">Linux</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Nginx</span><span class="chip">OpenResty</span><span class="chip">TCP/IP</span><span class="chip">OpenTelemetry</span><span class="chip" data-i18n="chip.mon">监控告警</span></div>
     </div>
     <div class="cell c-ai">
       <svg class="neural" id="neural" viewBox="0 0 300 200" aria-hidden="true"></svg>
@@ -349,18 +350,87 @@
   </div>
 </section>
 
-<!-- ============ 06 CONTACT ============ -->
+<!-- ============ 06 ANNUAL REVIEW ============ -->
+<!-- 每篇全文在 journal/<年份>.html -->
+<section id="journal">
+  <div class="sec-head rv">
+    <h2 class="sec-title" data-i18n="journal.title">年度总结<em>。</em></h2>
+    <div class="sec-meta mono"><b>06 // ANNUAL REVIEW</b><br />8 VOLUMES · 2018 — 2025<br />ONE ENTRY PER YEAR</div>
+  </div>
+  <p class="jr-intro rv" data-i18n="journal.intro">每年最后一天，简单写几句：这一年工作怎么样，家里怎么样，有什么收获，明年想做点什么。</p>
+  <p class="jr-note mono rv" data-i18n="journal.note">8 篇 · 每篇约 1000 字 · 点击卡片阅读全文</p>
+  <div class="jr-grid rv">
+    <a class="jr-card" href="journal/2018.html">
+      <div class="jr-top mono"><span>VOL.01</span><span>FIRST JOB</span></div>
+      <div class="jr-head"><div class="jr-year"><span class="o">20</span>18</div><span class="seal sm" aria-hidden="true">起步</span></div>
+      <h3 class="jr-title" data-i18n="j18.t">来上海的第一年</h3>
+      <p class="jr-ex" data-i18n="j18.ex">第一份全职工作，适应得比想象中快。职场新人，做什么都有劲，同事也都不错。</p>
+      <div class="jr-foot mono"><span class="jr-ticks" aria-hidden="true"><i class="on cur"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="jr-read">READ <em>→</em></span></div>
+    </a>
+    <a class="jr-card" href="journal/2019.html">
+      <div class="jr-top mono"><span>VOL.02</span><span>MARRIED</span></div>
+      <div class="jr-head"><div class="jr-year"><span class="o">20</span>19</div><span class="seal sm" aria-hidden="true">成家</span></div>
+      <h3 class="jr-title" data-i18n="j19.t">有条不紊的第二年</h3>
+      <p class="jr-ex" data-i18n="j19.ex">工作第二年，生活和工作都上了轨道，技术栈慢慢成熟。这一年也办了人生大事：结婚。</p>
+      <div class="jr-foot mono"><span class="jr-ticks" aria-hidden="true"><i class="on"></i><i class="on cur"></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="jr-read">READ <em>→</em></span></div>
+    </a>
+    <a class="jr-card" href="journal/2020.html">
+      <div class="jr-top mono"><span>VOL.03</span><span>NEW JOB</span></div>
+      <div class="jr-head"><div class="jr-year"><span class="o">20</span>20</div><span class="seal sm" aria-hidden="true">充电</span></div>
+      <h3 class="jr-title" data-i18n="j20.t">新公司，新技术</h3>
+      <p class="jr-ex" data-i18n="j20.ex">在 TapTap 的第一年，接触了一整套新的技术，从零开始学，也学得比较成功。</p>
+      <div class="jr-foot mono"><span class="jr-ticks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on cur"></i><i></i><i></i><i></i><i></i><i></i></span><span class="jr-read">READ <em>→</em></span></div>
+    </a>
+    <a class="jr-card" href="journal/2021.html">
+      <div class="jr-top mono"><span>VOL.04</span><span>NEW DAD</span></div>
+      <div class="jr-head"><div class="jr-year"><span class="o">20</span>21</div><span class="seal sm" aria-hidden="true">当爹</span></div>
+      <h3 class="jr-title" data-i18n="j21.t">儿子出生了</h3>
+      <p class="jr-ex" data-i18n="j21.ex">媳妇回老家待产，儿子出生。疫情来得突然，一开始挺懵，也没太当回事。</p>
+      <div class="jr-foot mono"><span class="jr-ticks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on cur"></i><i></i><i></i><i></i><i></i></span><span class="jr-read">READ <em>→</em></span></div>
+    </a>
+    <a class="jr-card" href="journal/2022.html">
+      <div class="jr-top mono"><span>VOL.05</span><span>HOME</span></div>
+      <div class="jr-head"><div class="jr-year"><span class="o">20</span>22</div><span class="seal sm" aria-hidden="true">安家</span></div>
+      <h3 class="jr-title" data-i18n="j22.t">在上海买了房子</h3>
+      <p class="jr-ex" data-i18n="j22.ex">在上海买了房，算是有了落脚的地方。疫情越来越严重，但心里不怕；儿子健健康康地长大。</p>
+      <div class="jr-foot mono"><span class="jr-ticks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on cur"></i><i></i><i></i><i></i></span><span class="jr-read">READ <em>→</em></span></div>
+    </a>
+    <a class="jr-card" href="journal/2023.html">
+      <div class="jr-top mono"><span>VOL.06</span><span>NEW JOB</span></div>
+      <div class="jr-head"><div class="jr-year"><span class="o">20</span>23</div><span class="seal sm" aria-hidden="true">换道</span></div>
+      <h3 class="jr-title" data-i18n="j23.t">年底，换了份新工作</h3>
+      <p class="jr-ex" data-i18n="j23.ex">在心动做满了四年，年底去了欢乐互娱。离家挺远，通勤变长了，好在新同事都不错。</p>
+      <div class="jr-foot mono"><span class="jr-ticks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on cur"></i><i></i><i></i></span><span class="jr-read">READ <em>→</em></span></div>
+    </a>
+    <a class="jr-card" href="journal/2024.html">
+      <div class="jr-top mono"><span>VOL.07</span><span>KINDERGARTEN</span></div>
+      <div class="jr-head"><div class="jr-year"><span class="o">20</span>24</div><span class="seal sm" aria-hidden="true">同行</span></div>
+      <h3 class="jr-title" data-i18n="j24.t">儿子上幼儿园了</h3>
+      <p class="jr-ex" data-i18n="j24.ex">儿子上了幼儿园，一家人多出去走了走。工作上 AI 工具开始真正进入日常。</p>
+      <div class="jr-foot mono"><span class="jr-ticks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on cur"></i><i></i></span><span class="jr-read">READ <em>→</em></span></div>
+    </a>
+    <a class="jr-card latest" href="journal/2025.html">
+      <div class="jr-top mono"><span>VOL.08</span><b><span class="pulse"></span>LATEST</b></div>
+      <div class="jr-head"><div class="jr-year"><span class="o">20</span>25</div><span class="seal sm" aria-hidden="true">思变</span></div>
+      <h3 class="jr-title" data-i18n="j25.t">新疆自驾，和 AI 带来的变化</h3>
+      <p class="jr-ex" data-i18n="j25.ex">去新疆自驾玩了十几天，很痛快。工作上被 AI 冲击得不轻，也借机想了想自己的职业方向。</p>
+      <div class="jr-foot mono"><span class="jr-ticks" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on cur"></i></span><span class="jr-read">READ <em>→</em></span></div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ 07 CONTACT ============ -->
 <section id="contact">
   <div>
-    <div class="sec-meta mono rv" style="text-align:left;margin-bottom:40px"><b>06 // CONTACT</b><br />OPEN TO WORK · COLLAB · CHAT</div>
+    <div class="sec-meta mono rv" style="text-align:left;margin-bottom:40px"><b>07 // CONTACT</b><br />OPEN TO WORK · COLLAB · CHAT</div>
     <h2 class="big rv">Let’s <em>build</em><br />something.<span class="cn" data-i18n="contact.cn">一起构建稳定、可扩展、AI 驱动的系统。</span></h2>
-    <a class="mail rv" href="mailto:ahayeslin@gmail.com">ahayeslin@gmail.com <span>↗</span></a>
+    <a class="mail rv" href="mailto:liam572.ai@gmail.com">liam572.ai@gmail.com <span>↗</span></a>
     <div class="socials rv">
       <a class="social" href="https://github.com/liam572" target="_blank" rel="noopener">
         <div><span class="mono">01</span><strong>GitHub</strong><small id="ghMeta">@liam572</small></div>↗
       </a>
-      <a class="social" href="mailto:ahayeslin@gmail.com">
-        <div><span class="mono">02</span><strong>Email</strong><small>ahayeslin@gmail.com</small></div>↗
+      <a class="social" href="mailto:liam572.ai@gmail.com">
+        <div><span class="mono">02</span><strong>Email</strong><small>liam572.ai@gmail.com</small></div>↗
       </a>
       <button class="social" id="wechat" type="button" aria-expanded="false">
         <div><span class="mono">03</span><strong data-i18n="wx.t">微信</strong><small data-i18n="wx.s">扫码添加</small></div>↗
